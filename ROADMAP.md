@@ -36,6 +36,8 @@ capítulo-proyecto.
 - Este repositorio sigue la plantilla de repositorio de RFC-0001 §15.
 - Cada capítulo debe cumplir la anatomía de RFC-0001 §14.
 - Cada ejercicio debe seguir los niveles de RFC-0001 §17.
+- El mapa global del curso vive en `diagrams/course-map.mmd` y se explica en
+  `docs/mapa-global.md`.
 - El uso de IA se rige por RFC-0001 §20: la IA acelera, el criterio humano
   decide.
 - El modo autónomo con revisión diferida vive en `docs/flujo-autonomo.md` y no
