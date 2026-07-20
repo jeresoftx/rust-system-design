@@ -1,0 +1,25 @@
+sequenceDiagram
+    participant Cliente
+    participant API as API de creación
+    participant Limiter as Rate limiter
+    participant Gen as Generador base62
+    participant Store as Repositorio
+    participant Cache as Caché
+
+    Cliente->>API: crear(long_url, owner)
+    API->>Limiter: verificar cuota del owner
+    Limiter-->>API: permitido
+    API->>Gen: siguiente código
+    Gen-->>API: code
+    API->>Store: guardar code -> long_url
+    Store-->>API: ShortLink
+    API-->>Cliente: short_url
+
+    Cliente->>Cache: resolver(code)
+    alt cache hit
+        Cache-->>Cliente: long_url
+    else cache miss
+        Cache->>Store: buscar(code)
+        Store-->>Cache: long_url
+        Cache-->>Cliente: long_url
+    end

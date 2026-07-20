@@ -30,3 +30,6 @@ jobs:
 
       - name: Doctests
         run: cargo test --doc
+
+      - name: Benchmarks
+        run: cargo bench

@@ -116,6 +116,17 @@ impl fmt::Display for TinyUrlError {
 impl Error for TinyUrlError {}
 
 /// Servicio en memoria para estudiar decisiones de TinyURL.
+///
+/// ```
+/// use rust_system_design::tiny_url::TinyUrlService;
+///
+/// let mut service = TinyUrlService::new();
+/// let link = service
+///     .create_link("academy", "https://example.com/rust")
+///     .expect("URL válida");
+///
+/// assert_eq!(service.resolve(&link.code).unwrap(), "https://example.com/rust");
+/// ```
 #[derive(Debug, Clone)]
 pub struct TinyUrlService {
     config: TinyUrlConfig,

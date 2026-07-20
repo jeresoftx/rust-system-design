@@ -11,4 +11,8 @@ readme = "README.md"
 name = "rust_system_design"
 path = "src/lib.rs"
 
+[[bench]]
+name = "tiny_url_baseline"
+harness = false
+
 [dependencies]
