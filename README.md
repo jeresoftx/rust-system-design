@@ -34,7 +34,7 @@ redes sociales y video.
 |---|----------|-----------------|--------|
 | 01 | TinyURL | `src/tiny_url.rs` | benchmarked |
 | 02 | Twitter | `src/twitter.rs` | benchmarked |
-| 03 | Uber | `src/uber.rs` | draft |
+| 03 | Uber | `src/uber.rs` | implemented |
 | 04 | Netflix | `src/netflix.rs` | planned |
 | 05 | Dropbox | `src/dropbox.rs` | planned |
 | 06 | Google Docs | `src/google_docs.rs` | planned |
