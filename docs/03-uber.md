@@ -2,7 +2,7 @@
 
 - **Curso:** rust-system-design
 - **Semestre:** 4
-- **Estado:** draft
+- **Estado:** implemented
 - **Issue:** #13
 - **Milestone:** S4 · 03 · Uber
 - **Módulo Rust:** `src/uber.rs`
@@ -289,12 +289,12 @@ prometer rendimiento de producción.
 - [x] Arquitectura con diagrama Mermaid.
 - [x] Fallas, recuperación y tradeoffs documentados.
 - [x] Observabilidad mínima definida.
-- [ ] Modelo Rust implementado sin `unsafe`.
-- [ ] Tests unitarios, integración o doctests según aplique.
+- [x] Modelo Rust implementado sin `unsafe`.
+- [x] Tests unitarios, integración o doctests según aplique.
 - [ ] Benchmarks agregados o decisión de no aplicar documentada.
 - [x] Ejercicios en cuatro niveles.
-- [ ] `cargo fmt --check` pasa.
-- [ ] `cargo clippy --all-targets --all-features -- -D warnings` pasa.
-- [ ] `cargo test --all-targets` pasa.
-- [ ] `cargo test --doc` pasa.
+- [x] `cargo fmt --check` pasa.
+- [x] `cargo clippy --all-targets --all-features -- -D warnings` pasa.
+- [x] `cargo test --all-targets` pasa.
+- [x] `cargo test --doc` pasa.
 - [ ] Revisión humana realizada antes de marcar `reviewed` o `published`.

@@ -6,6 +6,7 @@
 
 pub mod tiny_url;
 pub mod twitter;
+pub mod uber;
 
 /// Un proyecto canónico del curso de System Design.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]

@@ -67,7 +67,7 @@
       "id": "uber",
       "title": "Uber",
       "slug": "uber",
-      "status": "draft",
+      "status": "implemented",
       "milestone": "S4 · 03 · Uber",
       "module": "src/uber.rs",
       "example": "examples/uber.rs",
