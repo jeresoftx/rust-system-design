@@ -23,4 +23,8 @@ harness = false
 name = "uber_matching_baseline"
 harness = false
 
+[[bench]]
+name = "netflix_playback_baseline"
+harness = false
+
 [dependencies]
