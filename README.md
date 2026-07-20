@@ -98,6 +98,8 @@ cargo test --doc
   hacia cursos posteriores o dominios aplicados.
 - `docs/flujo-autonomo.md` define el modo autónomo con revisión diferida
   permitido por RFC-0001 §20.
+- `docs/checklist-revision-capitulo.md` define la revisión humana requerida
+  antes de marcar capítulos como `reviewed` o `published`.
 - `docs/plantilla-capitulo-proyecto.md` define la anatomía obligatoria de cada
   capítulo-proyecto del curso.
 - `ROADMAP.md` registra el avance del curso sin convertirlo en una fecha
