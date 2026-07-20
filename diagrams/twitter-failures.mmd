@@ -1,0 +1,24 @@
+flowchart TD
+    request["Solicitud"] --> kind{"¿Usuario, follow, tweet o timeline?"}
+    kind -->|Usuario| handle["Validar handle"]
+    handle -->|Vacío| empty_handle["EmptyHandle"]
+    handle -->|Duplicado| duplicate["DuplicateHandle"]
+    handle -->|Válido| user_created["users_created"]
+
+    kind -->|Follow| follow["Validar usuarios"]
+    follow -->|Usuario inexistente| unknown["UnknownUser"]
+    follow -->|Self-follow| self["SelfFollow"]
+    follow -->|Duplicado| already["AlreadyFollowing"]
+    follow -->|Válido| edge["follow_edges_created"]
+
+    kind -->|Tweet| tweet["Validar texto"]
+    tweet -->|Vacío| empty_tweet["EmptyTweet"]
+    tweet -->|Muy largo| long_tweet["TweetTooLong"]
+    tweet -->|Válido| reach{"¿Autor de alto alcance?"}
+    reach -->|No| write["fan-out on write"]
+    reach -->|Sí| read["fan-out on read"]
+
+    kind -->|Timeline| timeline["Leer timeline"]
+    timeline --> materialized["Entradas materializadas"]
+    timeline --> merge["Merge de alto alcance"]
+    merge --> lag["eventual_lag_ticks"]

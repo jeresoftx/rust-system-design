@@ -2,7 +2,7 @@
 
 - **Curso:** rust-system-design
 - **Semestre:** 4
-- **Estado:** implemented
+- **Estado:** benchmarked
 - **Issue:** #9
 - **Milestone:** S4 · 02 · Twitter
 - **Módulo Rust:** `src/twitter.rs`
@@ -278,6 +278,17 @@ Sí aplican benchmarks porque el capítulo compara costos observables:
 Los resultados deben usarse como contraste pedagógico, no como promesa de
 rendimiento.
 
+El baseline actual vive en `benches/twitter_timeline_baseline.rs` y mide lectura
+de timeline mezclando entradas materializadas con tweets de autor de alto
+alcance. Usa solo biblioteca estándar; Criterion queda pospuesto hasta que se
+compare formalmente más de una estrategia de timeline.
+
+## Diagramas
+
+- `diagrams/twitter-flow.mmd` describe publicación, fan-out y lectura.
+- `diagrams/twitter-failures.mmd` muestra validaciones, degradación y fallas
+  esperadas.
+
 ## Ejercicios
 
 - **Nivel 1:** cambiar el límite que define autor de alto alcance y explicar el
@@ -299,7 +310,7 @@ rendimiento.
 - [x] Observabilidad mínima definida.
 - [x] Modelo Rust implementado sin `unsafe`.
 - [x] Tests unitarios, integración o doctests según aplique.
-- [ ] Benchmarks agregados o decisión de no aplicar documentada.
+- [x] Benchmarks agregados o decisión de no aplicar documentada.
 - [x] Ejercicios en cuatro niveles.
 - [x] `cargo fmt --check` pasa.
 - [x] `cargo clippy --all-targets --all-features -- -D warnings` pasa.
