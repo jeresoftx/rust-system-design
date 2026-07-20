@@ -1,0 +1,63 @@
+flowchart LR
+    subgraph prereq["Fundamentos que llegan al curso"]
+        algorithms["rust-algorithms"]
+        data_structures["rust-data-structures"]
+        networking["rust-networking"]
+        operating_systems["rust-operating-systems"]
+        database_internals["rust-database-internals"]
+        concurrency["rust-concurrency"]
+        distributed_systems["rust-distributed-systems"]
+    end
+
+    subgraph course["rust-system-design · Semestre 4"]
+        tinyurl["01 · TinyURL"]
+        twitter["02 · Twitter"]
+        uber["03 · Uber"]
+        netflix["04 · Netflix"]
+        dropbox["05 · Dropbox"]
+        google_docs["06 · Google Docs"]
+        redis["07 · Redis"]
+        kafka["08 · Kafka"]
+        booking["09 · Booking Engine"]
+        airbnb["10 · Airbnb"]
+    end
+
+    subgraph outcomes["Cursos y dominios que reciben criterio de diseño"]
+        software_architecture["rust-software-architecture"]
+        cloud["rust-cloud"]
+        projects["rust-projects"]
+        travel["rust-travel · Travel Tech"]
+        applied_domains["Dominios aplicados"]
+    end
+
+    algorithms --> tinyurl
+    data_structures --> redis
+    networking --> twitter
+    operating_systems --> netflix
+    database_internals --> dropbox
+    concurrency --> google_docs
+    distributed_systems --> kafka
+
+    tinyurl --> twitter
+    twitter --> uber
+    uber --> netflix
+    netflix --> dropbox
+    dropbox --> google_docs
+    google_docs --> redis
+    redis --> kafka
+    kafka --> booking
+    booking --> airbnb
+
+    course --> software_architecture
+    course --> cloud
+    course --> projects
+    booking --> travel
+    airbnb --> travel
+    travel --> applied_domains
+
+    classDef prereqNode fill:#0f172a,stroke:#64748b,color:#f8fafc
+    classDef courseNode fill:#111827,stroke:#facc15,color:#facc15
+    classDef outcomeNode fill:#172554,stroke:#38bdf8,color:#e0f2fe
+    class algorithms,data_structures,networking,operating_systems,database_internals,concurrency,distributed_systems prereqNode
+    class tinyurl,twitter,uber,netflix,dropbox,google_docs,redis,kafka,booking,airbnb courseNode
+    class software_architecture,cloud,projects,travel,applied_domains outcomeNode

@@ -94,6 +94,8 @@ cargo test --doc
 - `AGENTS.md` es la guía de arranque para humanos e IA en este repositorio.
 - `course.manifest.json` expone el mapa estructurado del curso para
   `academy-web`.
+- `diagrams/course-map.mmd` muestra prerequisitos, capítulos-proyecto y salidas
+  hacia cursos posteriores o dominios aplicados.
 - `docs/flujo-autonomo.md` define el modo autónomo con revisión diferida
   permitido por RFC-0001 §20.
 - `docs/plantilla-capitulo-proyecto.md` define la anatomía obligatoria de cada

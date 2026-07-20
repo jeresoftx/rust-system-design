@@ -3,3 +3,4 @@
 - [Introducción](./00-introduccion.md)
 - [Plantilla canónica de capítulo-proyecto](./plantilla-capitulo-proyecto.md)
 - [Manifiesto para academy-web](./manifiesto-academy-web.md)
+- [Mapa global del curso](./mapa-global.md)
