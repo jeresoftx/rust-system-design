@@ -5,3 +5,4 @@
 - [Manifiesto para academy-web](./manifiesto-academy-web.md)
 - [Mapa global del curso](./mapa-global.md)
 - [Checklist de revisión humana](./checklist-revision-capitulo.md)
+- [TinyURL](./01-tinyurl.md)
