@@ -2,7 +2,7 @@
 
 - **Curso:** rust-system-design
 - **Semestre:** 4
-- **Estado:** implemented
+- **Estado:** benchmarked
 - **Issue:** #13
 - **Milestone:** S4 · 03 · Uber
 - **Módulo Rust:** `src/uber.rs`
@@ -272,6 +272,17 @@ Sí aplican benchmarks porque hay costos observables:
 Los resultados deben servir para comparar decisiones pedagógicas, no para
 prometer rendimiento de producción.
 
+El baseline actual vive en `benches/uber_matching_baseline.rs` y mide matching
+con muchos drivers repartidos en una cuadrícula lógica. Usa solo biblioteca
+estándar; Criterion queda pospuesto hasta que comparemos formalmente búsqueda
+global contra índice por celdas.
+
+## Diagramas
+
+- `diagrams/uber-flow.mmd` describe ubicación, matching y asignación.
+- `diagrams/uber-failures.mmd` muestra validaciones, fallas y transición de
+  estados.
+
 ## Ejercicios
 
 - **Nivel 1:** cambiar el tamaño de celda y observar cuántos candidatos se
@@ -291,7 +302,7 @@ prometer rendimiento de producción.
 - [x] Observabilidad mínima definida.
 - [x] Modelo Rust implementado sin `unsafe`.
 - [x] Tests unitarios, integración o doctests según aplique.
-- [ ] Benchmarks agregados o decisión de no aplicar documentada.
+- [x] Benchmarks agregados o decisión de no aplicar documentada.
 - [x] Ejercicios en cuatro niveles.
 - [x] `cargo fmt --check` pasa.
 - [x] `cargo clippy --all-targets --all-features -- -D warnings` pasa.
