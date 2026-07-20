@@ -8,12 +8,13 @@ orienta el avance, pero no convierte el curso en una carrera por terminar.
 
 ## Estado actual
 
-El repositorio acaba de nacer con su estructura inicial, licencias, README,
-AGENTS, crate Rust mínimo y tabla de capítulos-proyecto planeados.
+El repositorio ya tiene estructura inicial, licencias, README, AGENTS, crate
+Rust mínimo, tabla de capítulos-proyecto planeados, milestones, issues, labels
+y asignaciones en GitHub.
 
 Todavía no hay capítulos implementados ni publicados. El siguiente paso natural
-es convertir el alcance del curso en milestones e issues, antes de tocar código
-de curso, para que el checklist operativo viva en GitHub.
+es empezar por el issue de gobernanza que define la plantilla canónica de
+capítulo-proyecto.
 
 ## Capítulos-proyecto planeados
 
@@ -37,6 +38,8 @@ de curso, para que el checklist operativo viva en GitHub.
 - Cada ejercicio debe seguir los niveles de RFC-0001 §17.
 - El uso de IA se rige por RFC-0001 §20: la IA acelera, el criterio humano
   decide.
+- El modo autónomo con revisión diferida vive en `docs/flujo-autonomo.md` y no
+  equivale a publicar contenido.
 
 ## Fuera de alcance por ahora
 
@@ -49,6 +52,6 @@ de curso, para que el checklist operativo viva en GitHub.
 
 ## Siguiente paso natural
 
-Crear milestones e issues para todo el plan del repositorio, asignarlos a
-`jeresoftx`, etiquetarlos y usarlos como checklist antes de iniciar la
-implementación capítulo por capítulo.
+Resolver el issue #1: definir la plantilla canónica de capítulo-proyecto para
+que todos los capítulos del curso compartan anatomía, verificaciones y criterios
+de avance.
