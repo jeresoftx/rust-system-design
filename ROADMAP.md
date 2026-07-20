@@ -38,6 +38,8 @@ capítulo-proyecto.
 - Cada ejercicio debe seguir los niveles de RFC-0001 §17.
 - El mapa global del curso vive en `diagrams/course-map.mmd` y se explica en
   `docs/mapa-global.md`.
+- La checklist de revisión humana vive en
+  `docs/checklist-revision-capitulo.md`.
 - El uso de IA se rige por RFC-0001 §20: la IA acelera, el criterio humano
   decide.
 - El modo autónomo con revisión diferida vive en `docs/flujo-autonomo.md` y no
