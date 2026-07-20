@@ -7,3 +7,4 @@
 - [Checklist de revisión humana](./checklist-revision-capitulo.md)
 - [TinyURL](./01-tinyurl.md)
 - [Revisión pendiente: TinyURL](./revision-tinyurl.md)
+- [Twitter](./02-twitter.md)
