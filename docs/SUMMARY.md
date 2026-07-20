@@ -11,3 +11,5 @@
 - [Revisión pendiente: Twitter](./revision-twitter.md)
 - [Uber](./03-uber.md)
 - [Revisión pendiente: Uber](./revision-uber.md)
+- [Netflix](./04-netflix.md)
+- [Revisión pendiente: Netflix](./revision-netflix.md)

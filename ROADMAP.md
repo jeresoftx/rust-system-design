@@ -9,12 +9,13 @@ orienta el avance, pero no convierte el curso en una carrera por terminar.
 ## Estado actual
 
 El repositorio ya tiene estructura inicial, licencias, README, AGENTS, crate
-Rust mínimo, tabla de capítulos-proyecto planeados, milestones, issues, labels
-y asignaciones en GitHub.
+Rust verificable, tabla de capítulos-proyecto, milestones, issues, labels y
+asignaciones en GitHub.
 
-Todavía no hay capítulos implementados ni publicados. El siguiente paso natural
-es empezar por el issue de gobernanza que define la plantilla canónica de
-capítulo-proyecto.
+TinyURL, Twitter, Uber y Netflix están en estado `benchmarked`: tienen diseño,
+modelo Rust, ejemplo, pruebas, doctests, diagramas y baseline de benchmark. No
+están marcados como `reviewed` ni `published` porque falta revisión humana de
+contenido, claridad, ortografía, honestidad autoral y preparación editorial.
 
 ## Capítulos-proyecto planeados
 
@@ -23,7 +24,7 @@ capítulo-proyecto.
 | 01 | TinyURL | benchmarked |
 | 02 | Twitter | benchmarked |
 | 03 | Uber | benchmarked |
-| 04 | Netflix | planned |
+| 04 | Netflix | benchmarked |
 | 05 | Dropbox | planned |
 | 06 | Google Docs | planned |
 | 07 | Redis | planned |
@@ -56,6 +57,6 @@ capítulo-proyecto.
 
 ## Siguiente paso natural
 
-Revisión humana de TinyURL, Twitter y Uber antes de marcar capítulos como
-`reviewed` o `published`. Después de esa revisión, continuar con el bloque del
-capítulo Netflix.
+Revisión humana de TinyURL, Twitter, Uber y Netflix antes de marcar capítulos
+como `reviewed` o `published`. Después de esa revisión, continuar con el bloque
+del capítulo Dropbox.
