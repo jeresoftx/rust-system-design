@@ -98,6 +98,8 @@ cargo test --doc
   primer capítulo-proyecto.
 - `docs/revision-twitter.md` concentra el estado de revisión pendiente del
   capítulo-proyecto Twitter.
+- `docs/revision-uber.md` concentra el estado de revisión pendiente del
+  capítulo-proyecto Uber.
 - `diagrams/course-map.mmd` muestra prerequisitos, capítulos-proyecto y salidas
   hacia cursos posteriores o dominios aplicados.
 - `docs/flujo-autonomo.md` define el modo autónomo con revisión diferida
