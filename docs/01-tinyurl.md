@@ -2,7 +2,7 @@
 
 - **Curso:** rust-system-design
 - **Semestre:** 4
-- **Estado:** implemented
+- **Estado:** benchmarked
 - **Issue:** #5
 - **Milestone:** S4 · 01 · TinyURL
 - **Módulo Rust:** `src/tiny_url.rs`
@@ -256,6 +256,18 @@ Sí aplican benchmarks en este capítulo porque hay costos observables:
 Los benchmarks deben presentarse como material pedagógico, no como promesa de
 rendimiento de producción.
 
+El baseline actual vive en `benches/tiny_url_baseline.rs` y mide resolución con
+caché caliente usando solo la biblioteca estándar. Criterion puede agregarse más
+adelante si la comparación entre diseños necesita estadística más formal; por
+ahora no se agrega para evitar una dependencia antes de que aporte suficiente
+valor educativo.
+
+## Diagramas
+
+- `diagrams/tinyurl-flow.mmd` describe creación y redirección.
+- `diagrams/tinyurl-failures.mmd` muestra validaciones, límites y fallas
+  esperadas.
+
 ## Ejercicios
 
 - **Nivel 1:** cambiar el alfabeto base62 y explicar el impacto en capacidad.
@@ -275,7 +287,7 @@ rendimiento de producción.
 - [x] Observabilidad mínima definida.
 - [x] Modelo Rust implementado sin `unsafe`.
 - [x] Tests unitarios, integración o doctests según aplique.
-- [ ] Benchmarks agregados o decisión de no aplicar documentada.
+- [x] Benchmarks agregados o decisión de no aplicar documentada.
 - [x] Ejercicios en cuatro niveles.
 - [x] `cargo fmt --check` pasa.
 - [x] `cargo clippy --all-targets --all-features -- -D warnings` pasa.

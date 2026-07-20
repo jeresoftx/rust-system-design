@@ -1,0 +1,15 @@
+flowchart TD
+    request["Solicitud"] --> kind{"¿Crear o resolver?"}
+    kind -->|Crear| validate_url["Validar URL"]
+    validate_url -->|Inválida| invalid_url["invalid_urls + error"]
+    validate_url -->|Válida| quota["Verificar cuota"]
+    quota -->|Sin cuota| limited["rate_limited_creations + error"]
+    quota -->|Permitido| create["Crear ShortLink"]
+
+    kind -->|Resolver| validate_code["Validar código"]
+    validate_code -->|Inválido| invalid_code["error sin tocar repositorio"]
+    validate_code -->|Válido| cache{"¿Está en caché?"}
+    cache -->|Sí| hit["cache_hits + redirect_hits"]
+    cache -->|No| store{"¿Existe en repositorio?"}
+    store -->|Sí| miss_hit["cache_misses + redirect_hits"]
+    store -->|No| miss["cache_misses + redirect_misses"]
