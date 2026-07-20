@@ -20,7 +20,7 @@ capítulo-proyecto.
 
 | # | Proyecto | Estado |
 |---|----------|--------|
-| 01 | TinyURL | planned |
+| 01 | TinyURL | benchmarked |
 | 02 | Twitter | planned |
 | 03 | Uber | planned |
 | 04 | Netflix | planned |
@@ -56,6 +56,6 @@ capítulo-proyecto.
 
 ## Siguiente paso natural
 
-Resolver el issue #1: definir la plantilla canónica de capítulo-proyecto para
-que todos los capítulos del curso compartan anatomía, verificaciones y criterios
-de avance.
+Revisión humana de TinyURL antes de marcar el capítulo como `reviewed` o
+`published`. Después de esa revisión, continuar con el bloque del capítulo
+Twitter.

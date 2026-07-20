@@ -6,3 +6,4 @@
 - [Mapa global del curso](./mapa-global.md)
 - [Checklist de revisión humana](./checklist-revision-capitulo.md)
 - [TinyURL](./01-tinyurl.md)
+- [Revisión pendiente: TinyURL](./revision-tinyurl.md)
