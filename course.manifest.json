@@ -84,7 +84,7 @@
       "id": "netflix",
       "title": "Netflix",
       "slug": "netflix",
-      "status": "planned",
+      "status": "draft",
       "milestone": "S4 · 04 · Netflix",
       "module": "src/netflix.rs",
       "example": "examples/netflix.rs",
