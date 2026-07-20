@@ -94,6 +94,8 @@ cargo test --doc
 - `AGENTS.md` es la guía de arranque para humanos e IA en este repositorio.
 - `course.manifest.json` expone el mapa estructurado del curso para
   `academy-web`.
+- `docs/revision-tinyurl.md` concentra el estado de revisión pendiente del
+  primer capítulo-proyecto.
 - `diagrams/course-map.mmd` muestra prerequisitos, capítulos-proyecto y salidas
   hacia cursos posteriores o dominios aplicados.
 - `docs/flujo-autonomo.md` define el modo autónomo con revisión diferida
