@@ -33,7 +33,7 @@ redes sociales y video.
 | # | Proyecto | Módulo sugerido | Estado |
 |---|----------|-----------------|--------|
 | 01 | TinyURL | `src/tiny_url.rs` | benchmarked |
-| 02 | Twitter | `src/twitter.rs` | draft |
+| 02 | Twitter | `src/twitter.rs` | implemented |
 | 03 | Uber | `src/uber.rs` | planned |
 | 04 | Netflix | `src/netflix.rs` | planned |
 | 05 | Dropbox | `src/dropbox.rs` | planned |

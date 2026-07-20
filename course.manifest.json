@@ -50,7 +50,7 @@
       "id": "twitter",
       "title": "Twitter",
       "slug": "twitter",
-      "status": "draft",
+      "status": "implemented",
       "milestone": "S4 · 02 · Twitter",
       "module": "src/twitter.rs",
       "example": "examples/twitter.rs",
