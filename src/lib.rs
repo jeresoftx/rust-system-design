@@ -4,6 +4,7 @@
 //! exponer metadatos verificables del curso mientras los proyectos se
 //! planifican como milestones e issues antes de tocar código de curso.
 
+pub mod netflix;
 pub mod tiny_url;
 pub mod twitter;
 pub mod uber;
