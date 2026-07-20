@@ -4,6 +4,8 @@
 //! exponer metadatos verificables del curso mientras los proyectos se
 //! planifican como milestones e issues antes de tocar código de curso.
 
+pub mod tiny_url;
+
 /// Un proyecto canónico del curso de System Design.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub struct SystemDesignProject {
