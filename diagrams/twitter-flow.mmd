@@ -1,0 +1,24 @@
+sequenceDiagram
+    participant Autor
+    participant API as API de publicación
+    participant Classifier as Clasificador de autor
+    participant Queue as Cola de fan-out
+    participant Worker as Fan-out worker
+    participant Timeline as Timeline materializado
+    participant Reader as Timeline reader
+    participant Rank as Ranking simple
+
+    Autor->>API: publicar(tweet)
+    API->>Classifier: medir alcance
+    alt autor normal
+        Classifier->>Queue: fan-out job
+        Queue->>Worker: procesar seguidores
+        Worker->>Timeline: escribir entradas
+    else autor de alto alcance
+        Classifier-->>API: guardar solo por autor
+    end
+
+    Reader->>Timeline: leer entradas materializadas
+    Reader->>Reader: mezclar autores de alto alcance
+    Reader->>Rank: ordenar candidatos
+    Rank-->>Reader: timeline

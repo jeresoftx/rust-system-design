@@ -15,4 +15,8 @@ path = "src/lib.rs"
 name = "tiny_url_baseline"
 harness = false
 
+[[bench]]
+name = "twitter_timeline_baseline"
+harness = false
+
 [dependencies]
