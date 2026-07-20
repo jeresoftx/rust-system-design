@@ -94,6 +94,8 @@ cargo test --doc
 - `AGENTS.md` es la guía de arranque para humanos e IA en este repositorio.
 - `docs/flujo-autonomo.md` define el modo autónomo con revisión diferida
   permitido por RFC-0001 §20.
+- `docs/plantilla-capitulo-proyecto.md` define la anatomía obligatoria de cada
+  capítulo-proyecto del curso.
 - `ROADMAP.md` registra el avance del curso sin convertirlo en una fecha
   límite.
 - Antes de tocar código de curso, el plan completo debe existir como milestones
