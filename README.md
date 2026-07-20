@@ -96,6 +96,8 @@ cargo test --doc
   `academy-web`.
 - `docs/revision-tinyurl.md` concentra el estado de revisión pendiente del
   primer capítulo-proyecto.
+- `docs/revision-twitter.md` concentra el estado de revisión pendiente del
+  capítulo-proyecto Twitter.
 - `diagrams/course-map.mmd` muestra prerequisitos, capítulos-proyecto y salidas
   hacia cursos posteriores o dominios aplicados.
 - `docs/flujo-autonomo.md` define el modo autónomo con revisión diferida
