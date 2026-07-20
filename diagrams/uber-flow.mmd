@@ -1,0 +1,20 @@
+sequenceDiagram
+    participant Rider
+    participant Driver
+    participant API as API de viajes
+    participant Location as Location updater
+    participant Geo as Geo index
+    participant Match as Matching engine
+    participant State as Ride state machine
+    participant Events as Event log
+
+    Driver->>Location: reportar ubicación
+    Location->>Geo: actualizar celda disponible
+    Rider->>API: solicitar viaje
+    API->>Match: buscar candidatos cercanos
+    Match->>Geo: leer celda y vecinas
+    Geo-->>Match: drivers disponibles
+    Match->>State: asignar driver
+    State->>Events: ride assigned
+    State-->>API: ride_id + driver_id
+    API-->>Rider: viaje asignado

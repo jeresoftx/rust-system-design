@@ -1,0 +1,19 @@
+flowchart TD
+    request["Solicitud"] --> kind{"¿Registro, ubicación o viaje?"}
+    kind -->|Registro| name["Validar nombre"]
+    name -->|Vacío| empty["EmptyName"]
+    name -->|Válido| registered["actor registrado"]
+
+    kind -->|Ubicación| driver["Validar driver"]
+    driver -->|No existe| unknown_driver["UnknownDriver"]
+    driver -->|Existe| index["actualizar Geo index"]
+
+    kind -->|Viaje| rider["Validar rider"]
+    rider -->|No existe| unknown_rider["UnknownRider"]
+    rider -->|Existe| candidates["buscar candidatos"]
+    candidates -->|Sin candidatos| no_drivers["NoDriversAvailable"]
+    candidates -->|Driver cercano| assigned["RideState::Assigned"]
+    assigned --> transition{"Siguiente transición"}
+    transition -->|válida| event["registrar evento"]
+    transition -->|inválida| invalid["InvalidTransition"]
+    event -->|Completed o Cancelled| release["liberar driver"]

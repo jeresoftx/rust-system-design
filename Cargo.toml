@@ -19,4 +19,8 @@ harness = false
 name = "twitter_timeline_baseline"
 harness = false
 
+[[bench]]
+name = "uber_matching_baseline"
+harness = false
+
 [dependencies]
