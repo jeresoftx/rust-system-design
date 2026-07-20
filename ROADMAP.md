@@ -22,7 +22,7 @@ capítulo-proyecto.
 |---|----------|--------|
 | 01 | TinyURL | benchmarked |
 | 02 | Twitter | benchmarked |
-| 03 | Uber | planned |
+| 03 | Uber | benchmarked |
 | 04 | Netflix | planned |
 | 05 | Dropbox | planned |
 | 06 | Google Docs | planned |
@@ -56,6 +56,6 @@ capítulo-proyecto.
 
 ## Siguiente paso natural
 
-Revisión humana de TinyURL y Twitter antes de marcar capítulos como `reviewed`
-o `published`. Después de esa revisión, continuar con el bloque del capítulo
-Uber.
+Revisión humana de TinyURL, Twitter y Uber antes de marcar capítulos como
+`reviewed` o `published`. Después de esa revisión, continuar con el bloque del
+capítulo Netflix.
