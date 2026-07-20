@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "course": {
+    "id": "rust-system-design",
+    "title": "Diseño de sistemas en Rust",
+    "slug": "system-design",
+    "repository": "https://github.com/jeresoftx/rust-system-design",
+    "collection": "camino troncal",
+    "semester": 4,
+    "status": "planned",
+    "language": "es-MX",
+    "summary": "Curso de Jeresoft Academy para diseñar sistemas completos con requisitos, capacidad, datos, APIs, fallas, observabilidad, tradeoffs y modelos Rust verificables.",
+    "relatedCourses": [
+      "rust-algorithms",
+      "rust-data-structures",
+      "rust-networking",
+      "rust-operating-systems",
+      "rust-database-internals",
+      "rust-concurrency",
+      "rust-distributed-systems",
+      "rust-software-architecture",
+      "rust-cloud",
+      "rust-travel"
+    ]
+  },
+  "assets": {
+    "basePath": "/assets/illustrations/courses/system-design",
+    "status": "pending"
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "id": "tinyurl",
+      "title": "TinyURL",
+      "slug": "tinyurl",
+      "status": "planned",
+      "milestone": "S4 · 01 · TinyURL",
+      "module": "src/tiny_url.rs",
+      "example": "examples/tiny_url.rs",
+      "themes": [
+        "identificadores",
+        "redirecciones",
+        "capacidad",
+        "caché"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 2,
+      "id": "twitter",
+      "title": "Twitter",
+      "slug": "twitter",
+      "status": "planned",
+      "milestone": "S4 · 02 · Twitter",
+      "module": "src/twitter.rs",
+      "example": "examples/twitter.rs",
+      "themes": [
+        "feeds",
+        "fanout",
+        "timeline",
+        "consistencia"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 3,
+      "id": "uber",
+      "title": "Uber",
+      "slug": "uber",
+      "status": "planned",
+      "milestone": "S4 · 03 · Uber",
+      "module": "src/uber.rs",
+      "example": "examples/uber.rs",
+      "themes": [
+        "geolocalización",
+        "matching",
+        "eventos",
+        "latencia"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 4,
+      "id": "netflix",
+      "title": "Netflix",
+      "slug": "netflix",
+      "status": "planned",
+      "milestone": "S4 · 04 · Netflix",
+      "module": "src/netflix.rs",
+      "example": "examples/netflix.rs",
+      "themes": [
+        "catálogo",
+        "streaming",
+        "caché",
+        "recomendaciones"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 5,
+      "id": "dropbox",
+      "title": "Dropbox",
+      "slug": "dropbox",
+      "status": "planned",
+      "milestone": "S4 · 05 · Dropbox",
+      "module": "src/dropbox.rs",
+      "example": "examples/dropbox.rs",
+      "themes": [
+        "sincronización",
+        "conflictos",
+        "metadata",
+        "durabilidad"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 6,
+      "id": "google-docs",
+      "title": "Google Docs",
+      "slug": "google-docs",
+      "status": "planned",
+      "milestone": "S4 · 06 · Google Docs",
+      "module": "src/google_docs.rs",
+      "example": "examples/google_docs.rs",
+      "themes": [
+        "colaboración",
+        "conflictos",
+        "operaciones",
+        "sincronización"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 7,
+      "id": "redis",
+      "title": "Redis",
+      "slug": "redis",
+      "status": "planned",
+      "milestone": "S4 · 07 · Redis",
+      "module": "src/redis.rs",
+      "example": "examples/redis.rs",
+      "themes": [
+        "memoria",
+        "persistencia",
+        "expiración",
+        "replicación"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 8,
+      "id": "kafka",
+      "title": "Kafka",
+      "slug": "kafka",
+      "status": "planned",
+      "milestone": "S4 · 08 · Kafka",
+      "module": "src/kafka.rs",
+      "example": "examples/kafka.rs",
+      "themes": [
+        "logs",
+        "particiones",
+        "consumidores",
+        "retención"
+      ],
+      "bridges": []
+    },
+    {
+      "number": 9,
+      "id": "booking-engine",
+      "title": "Booking Engine",
+      "slug": "booking-engine",
+      "status": "planned",
+      "milestone": "S4 · 09 · Booking Engine",
+      "module": "src/booking_engine.rs",
+      "example": "examples/booking_engine.rs",
+      "themes": [
+        "inventario",
+        "reservas",
+        "concurrencia",
+        "pagos"
+      ],
+      "bridges": [
+        "rust-travel"
+      ]
+    },
+    {
+      "number": 10,
+      "id": "airbnb",
+      "title": "Airbnb",
+      "slug": "airbnb",
+      "status": "planned",
+      "milestone": "S4 · 10 · Airbnb",
+      "module": "src/airbnb.rs",
+      "example": "examples/airbnb.rs",
+      "themes": [
+        "búsqueda",
+        "disponibilidad",
+        "reservas",
+        "confianza"
+      ],
+      "bridges": [
+        "rust-travel"
+      ]
+    }
+  ]
+}

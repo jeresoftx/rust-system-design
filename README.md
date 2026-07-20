@@ -92,6 +92,8 @@ cargo test --doc
 ## Gobernanza
 
 - `AGENTS.md` es la guía de arranque para humanos e IA en este repositorio.
+- `course.manifest.json` expone el mapa estructurado del curso para
+  `academy-web`.
 - `docs/flujo-autonomo.md` define el modo autónomo con revisión diferida
   permitido por RFC-0001 §20.
 - `docs/plantilla-capitulo-proyecto.md` define la anatomía obligatoria de cada
