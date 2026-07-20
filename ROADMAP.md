@@ -1,0 +1,54 @@
+# ROADMAP
+
+Estado de avance de `rust-system-design`, repositorio del camino troncal de
+Jeresoft Academy para diseño de sistemas en Rust.
+
+No hay fechas límite: este es un proyecto de legado (RFC-0001 §1). Este archivo
+orienta el avance, pero no convierte el curso en una carrera por terminar.
+
+## Estado actual
+
+El repositorio acaba de nacer con su estructura inicial, licencias, README,
+AGENTS, crate Rust mínimo y tabla de capítulos-proyecto planeados.
+
+Todavía no hay capítulos implementados ni publicados. El siguiente paso natural
+es convertir el alcance del curso en milestones e issues, antes de tocar código
+de curso, para que el checklist operativo viva en GitHub.
+
+## Capítulos-proyecto planeados
+
+| # | Proyecto | Estado |
+|---|----------|--------|
+| 01 | TinyURL | planned |
+| 02 | Twitter | planned |
+| 03 | Uber | planned |
+| 04 | Netflix | planned |
+| 05 | Dropbox | planned |
+| 06 | Google Docs | planned |
+| 07 | Redis | planned |
+| 08 | Kafka | planned |
+| 09 | Booking Engine | planned |
+| 10 | Airbnb | planned |
+
+## Alineación RFC-0001
+
+- Este repositorio sigue la plantilla de repositorio de RFC-0001 §15.
+- Cada capítulo debe cumplir la anatomía de RFC-0001 §14.
+- Cada ejercicio debe seguir los niveles de RFC-0001 §17.
+- El uso de IA se rige por RFC-0001 §20: la IA acelera, el criterio humano
+  decide.
+
+## Fuera de alcance por ahora
+
+- Preparar respuestas memorizadas para entrevistas sin explicar tradeoffs.
+- Construir clones de producción de los sistemas citados.
+- Reexplicar desde cero algoritmos, estructuras, redes, concurrencia o sistemas
+  distribuidos; esos fundamentos viven en sus cursos canónicos.
+- Agregar dependencias externas antes de justificar su valor educativo.
+- Publicar capítulos parciales como si estuvieran completos.
+
+## Siguiente paso natural
+
+Crear milestones e issues para todo el plan del repositorio, asignarlos a
+`jeresoftx`, etiquetarlos y usarlos como checklist antes de iniciar la
+implementación capítulo por capítulo.

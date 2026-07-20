@@ -1,0 +1,14 @@
+[package]
+name = "rust-system-design"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/jeresoftx/rust-system-design"
+description = "Diseño de sistemas en Rust para Jeresoft Academy."
+readme = "README.md"
+
+[lib]
+name = "rust_system_design"
+path = "src/lib.rs"
+
+[dependencies]
