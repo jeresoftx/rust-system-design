@@ -1,0 +1,14 @@
+flowchart TD
+    request["Solicitud de reproducción"] --> region{"¿Título disponible en región?"}
+    region -- "no" --> unavailable["Rechazar sin iniciar sesión"]
+    region -- "sí" --> bandwidth{"¿Hay variante compatible?"}
+    bandwidth -- "no" --> no_variant["Fallar con ancho de banda insuficiente"]
+    bandwidth -- "sí, menor calidad" --> downgrade["Registrar degradación"]
+    bandwidth -- "sí, mejor calidad" --> cdn{"¿CDN saludable con capacidad?"}
+    downgrade --> cdn
+    cdn -- "no" --> no_cdn["Rechazar por capacidad o salud"]
+    cdn -- "sí" --> playing["Sesión Playing"]
+    playing --> pause["Paused"]
+    pause --> playing
+    playing --> completed["Completed libera CDN"]
+    playing --> cancelled["Cancelled libera CDN"]

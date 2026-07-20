@@ -1,0 +1,11 @@
+flowchart LR
+    profile["Perfil"] --> catalog["Catálogo regional"]
+    profile --> recs["Recomendaciones"]
+    catalog --> playback["Playback orchestrator"]
+    recs --> playback
+    playback --> variant["Selector de variante"]
+    playback --> cdn["Selector de CDN"]
+    variant --> session["Sesión de reproducción"]
+    cdn --> session
+    session --> events["Event log"]
+    session --> metrics["Métricas"]

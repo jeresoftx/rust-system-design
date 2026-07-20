@@ -2,7 +2,7 @@
 
 - **Curso:** rust-system-design
 - **Semestre:** 4
-- **Estado:** draft
+- **Estado:** benchmarked
 - **Issue:** #17
 - **Milestone:** S4 · 04 · Netflix
 - **Módulo Rust:** `src/netflix.rs`
