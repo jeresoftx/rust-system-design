@@ -33,7 +33,7 @@
       "id": "tinyurl",
       "title": "TinyURL",
       "slug": "tinyurl",
-      "status": "planned",
+      "status": "draft",
       "milestone": "S4 · 01 · TinyURL",
       "module": "src/tiny_url.rs",
       "example": "examples/tiny_url.rs",
