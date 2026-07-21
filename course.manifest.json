@@ -188,7 +188,7 @@
       "id": "airbnb",
       "title": "Airbnb",
       "slug": "airbnb",
-      "status": "draft",
+      "status": "implemented",
       "milestone": "S4 · 10 · Airbnb",
       "module": "src/airbnb.rs",
       "example": "examples/airbnb.rs",

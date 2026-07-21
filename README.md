@@ -41,7 +41,7 @@ redes sociales y video.
 | 07 | Redis | `src/redis.rs` | benchmarked |
 | 08 | Kafka | `src/kafka.rs` | benchmarked |
 | 09 | Booking Engine | `src/booking_engine.rs` | benchmarked |
-| 10 | Airbnb | `src/airbnb.rs` | draft |
+| 10 | Airbnb | `src/airbnb.rs` | implemented |
 
 Estados posibles: `planned`, `draft`, `implemented`, `tested`,
 `benchmarked`, `reviewed`, `published`.
