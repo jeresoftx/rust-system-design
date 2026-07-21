@@ -1,0 +1,15 @@
+flowchart TD
+    command["Comando"] --> key{"¿Clave válida?"}
+    key -- "no" --> reject_key["Rechazar sin tocar estado"]
+    key -- "sí" --> type{"¿Tipo compatible?"}
+    type -- "no" --> reject_type["Rechazar WRONGTYPE"]
+    type -- "sí" --> memory{"¿Cabe en memoria?"}
+    memory -- "no" --> reject_memory["Rechazar escritura"]
+    memory -- "sí" --> write["Actualizar memoria"]
+    write --> aof["Registrar en AOF"]
+    read["GET/LIST"] --> ttl{"¿Expirada?"}
+    ttl -- "sí" --> expire["Borrar perezosamente"]
+    ttl -- "no" --> hit["Responder valor"]
+    replica["Réplica"] --> offset{"¿Offset futuro?"}
+    offset -- "sí" --> reject_offset["Rechazar sync"]
+    offset -- "no" --> batch["Enviar comandos posteriores"]

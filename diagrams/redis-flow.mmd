@@ -1,0 +1,10 @@
+flowchart LR
+    client["Cliente"] --> api["Command API"]
+    api --> ttl["TTL manager"]
+    api --> memory["Memory limiter"]
+    memory --> store["Memory store"]
+    store --> aof["AOF log"]
+    store --> snapshot["Snapshotter"]
+    aof --> replica["Replica sync"]
+    store --> metrics["Métricas"]
+    ttl --> metrics
