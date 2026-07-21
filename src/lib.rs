@@ -7,6 +7,7 @@
 pub mod dropbox;
 pub mod google_docs;
 pub mod netflix;
+pub mod redis;
 pub mod tiny_url;
 pub mod twitter;
 pub mod uber;
