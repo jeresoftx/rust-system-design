@@ -5,6 +5,7 @@
 //! planifican como milestones e issues antes de tocar código de curso.
 
 pub mod dropbox;
+pub mod google_docs;
 pub mod netflix;
 pub mod tiny_url;
 pub mod twitter;

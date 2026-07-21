@@ -37,7 +37,7 @@ redes sociales y video.
 | 03 | Uber | `src/uber.rs` | benchmarked |
 | 04 | Netflix | `src/netflix.rs` | benchmarked |
 | 05 | Dropbox | `src/dropbox.rs` | benchmarked |
-| 06 | Google Docs | `src/google_docs.rs` | draft |
+| 06 | Google Docs | `src/google_docs.rs` | implemented |
 | 07 | Redis | `src/redis.rs` | planned |
 | 08 | Kafka | `src/kafka.rs` | planned |
 | 09 | Booking Engine | `src/booking_engine.rs` | planned |
