@@ -2,7 +2,7 @@
 
 - **Curso:** rust-system-design
 - **Semestre:** 4
-- **Estado:** draft
+- **Estado:** benchmarked
 - **Issue:** #29
 - **Milestone:** S4 · 07 · Redis
 - **Módulo Rust:** `src/redis.rs`

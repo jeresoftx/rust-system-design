@@ -35,4 +35,8 @@ harness = false
 name = "google_docs_operations_baseline"
 harness = false
 
+[[bench]]
+name = "redis_hot_path_baseline"
+harness = false
+
 [dependencies]
