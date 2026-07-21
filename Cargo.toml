@@ -27,4 +27,8 @@ harness = false
 name = "netflix_playback_baseline"
 harness = false
 
+[[bench]]
+name = "dropbox_upload_baseline"
+harness = false
+
 [dependencies]

@@ -2,7 +2,7 @@
 
 - **Curso:** rust-system-design
 - **Semestre:** 4
-- **Estado:** draft
+- **Estado:** benchmarked
 - **Issue:** #21
 - **Milestone:** S4 · 05 · Dropbox
 - **Módulo Rust:** `src/dropbox.rs`
