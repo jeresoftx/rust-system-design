@@ -2,7 +2,7 @@
 
 - **Curso:** rust-system-design
 - **Semestre:** 4
-- **Estado:** draft
+- **Estado:** implemented
 - **Issue:** #33
 - **Milestone:** S4 · 08 · Kafka
 - **Módulo Rust:** `src/kafka.rs`
