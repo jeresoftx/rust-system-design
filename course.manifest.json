@@ -135,7 +135,7 @@
       "id": "redis",
       "title": "Redis",
       "slug": "redis",
-      "status": "draft",
+      "status": "implemented",
       "milestone": "S4 · 07 · Redis",
       "module": "src/redis.rs",
       "example": "examples/redis.rs",
