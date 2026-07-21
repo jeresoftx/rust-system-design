@@ -112,6 +112,8 @@ cargo test --doc
   capítulo-proyecto Kafka.
 - `docs/revision-booking-engine.md` concentra el estado de revisión pendiente
   del capítulo-proyecto Booking Engine.
+- `docs/revision-airbnb.md` concentra el estado de revisión pendiente del
+  capítulo-proyecto Airbnb.
 - `diagrams/course-map.mmd` muestra prerequisitos, capítulos-proyecto y salidas
   hacia cursos posteriores o dominios aplicados.
 - `docs/flujo-autonomo.md` define el modo autónomo con revisión diferida

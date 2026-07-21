@@ -12,11 +12,12 @@ El repositorio ya tiene estructura inicial, licencias, README, AGENTS, crate
 Rust verificable, tabla de capítulos-proyecto, milestones, issues, labels y
 asignaciones en GitHub.
 
-TinyURL, Twitter, Uber, Netflix, Dropbox, Google Docs, Redis, Kafka y Booking
-Engine están en estado `benchmarked`: tienen diseño, modelo Rust, ejemplo,
-pruebas, doctests, diagramas y baseline de benchmark. No están marcados como
-`reviewed` ni `published` porque falta revisión humana de contenido, claridad,
-ortografía, honestidad autoral y preparación editorial.
+TinyURL, Twitter, Uber, Netflix, Dropbox, Google Docs, Redis, Kafka, Booking
+Engine y Airbnb están en estado `benchmarked`: todos los capítulos-proyecto
+planeados tienen diseño, modelo Rust, ejemplo, pruebas, doctests, diagramas y
+baseline de benchmark. No están marcados como `reviewed` ni `published` porque
+falta revisión humana de contenido, claridad, ortografía, honestidad autoral y
+preparación editorial.
 
 ## Capítulos-proyecto planeados
 
@@ -31,7 +32,7 @@ ortografía, honestidad autoral y preparación editorial.
 | 07 | Redis | benchmarked |
 | 08 | Kafka | benchmarked |
 | 09 | Booking Engine | benchmarked |
-| 10 | Airbnb | planned |
+| 10 | Airbnb | benchmarked |
 
 ## Alineación RFC-0001
 
@@ -58,6 +59,6 @@ ortografía, honestidad autoral y preparación editorial.
 
 ## Siguiente paso natural
 
-Revisión humana de TinyURL, Twitter, Uber, Netflix, Dropbox, Google Docs, Redis,
-Kafka y Booking Engine antes de marcar capítulos como `reviewed` o `published`.
-Después de esa revisión, continuar con el bloque del capítulo Airbnb.
+Revisión humana de los diez capítulos-proyecto antes de marcar capítulos como
+`reviewed` o `published`. Después de esa revisión, el siguiente avance natural
+es decidir editorialmente qué capítulo se prepara primero para `academy-web`.
