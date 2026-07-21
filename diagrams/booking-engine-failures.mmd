@@ -1,0 +1,16 @@
+flowchart TD
+    request["Solicitud"] --> range{"¿Rango válido?"}
+    range -- "no" --> reject_range["Rechazar rango"]
+    range -- "sí" --> inventory{"¿Inventario completo?"}
+    inventory -- "no" --> reject_inventory["Rechazar inventario faltante"]
+    inventory -- "sí" --> available{"¿Unidades suficientes?"}
+    available -- "no" --> reject_availability["Rechazar overselling"]
+    available -- "sí" --> hold["Crear hold temporal"]
+    hold --> payment{"¿Pago o confirmación a tiempo?"}
+    payment -- "no" --> expire["Expirar y liberar inventario"]
+    payment -- "sí" --> confirm["Mover hold a reserva"]
+    confirm --> duplicate{"¿Confirmación repetida?"}
+    duplicate -- "sí" --> reject_duplicate["Rechazar transición inválida"]
+    duplicate -- "no" --> reserved["Reserva confirmada"]
+    reserved --> cancel["Cancelar reserva"]
+    cancel --> release["Liberar disponibilidad futura"]

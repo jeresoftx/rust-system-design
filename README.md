@@ -40,7 +40,7 @@ redes sociales y video.
 | 06 | Google Docs | `src/google_docs.rs` | benchmarked |
 | 07 | Redis | `src/redis.rs` | benchmarked |
 | 08 | Kafka | `src/kafka.rs` | benchmarked |
-| 09 | Booking Engine | `src/booking_engine.rs` | implemented |
+| 09 | Booking Engine | `src/booking_engine.rs` | benchmarked |
 | 10 | Airbnb | `src/airbnb.rs` | planned |
 
 Estados posibles: `planned`, `draft`, `implemented`, `tested`,

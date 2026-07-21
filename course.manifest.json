@@ -169,7 +169,7 @@
       "id": "booking-engine",
       "title": "Booking Engine",
       "slug": "booking-engine",
-      "status": "implemented",
+      "status": "benchmarked",
       "milestone": "S4 · 09 · Booking Engine",
       "module": "src/booking_engine.rs",
       "example": "examples/booking_engine.rs",
