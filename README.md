@@ -108,6 +108,8 @@ cargo test --doc
   capítulo-proyecto Google Docs.
 - `docs/revision-redis.md` concentra el estado de revisión pendiente del
   capítulo-proyecto Redis.
+- `docs/revision-kafka.md` concentra el estado de revisión pendiente del
+  capítulo-proyecto Kafka.
 - `diagrams/course-map.mmd` muestra prerequisitos, capítulos-proyecto y salidas
   hacia cursos posteriores o dominios aplicados.
 - `docs/flujo-autonomo.md` define el modo autónomo con revisión diferida
