@@ -20,3 +20,4 @@
 - [Redis](./07-redis.md)
 - [Revisión pendiente: Redis](./revision-redis.md)
 - [Kafka](./08-kafka.md)
+- [Revisión pendiente: Kafka](./revision-kafka.md)
