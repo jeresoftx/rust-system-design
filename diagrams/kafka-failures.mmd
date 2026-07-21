@@ -1,0 +1,16 @@
+flowchart TD
+    publish["PUBLISH"] --> topic{"¿Topic existe?"}
+    topic -- "no" --> reject_topic["Rechazar publicación"]
+    topic -- "sí" --> payload{"¿Payload válido?"}
+    payload -- "no" --> reject_payload["Rechazar sin avanzar offset"]
+    payload -- "sí" --> partition["Elegir partición"]
+    partition --> append["Append al log"]
+    append --> retention{"¿Excede retención?"}
+    retention -- "sí" --> remove["Eliminar offsets viejos"]
+    retention -- "no" --> visible["Evento visible"]
+    fetch["FETCH"] --> offset{"¿Offset disponible?"}
+    offset -- "no" --> reject_offset["Rechazar por retención o futuro"]
+    offset -- "sí" --> batch["Entregar lote"]
+    commit["COMMIT"] --> future{"¿Commit futuro?"}
+    future -- "sí" --> reject_commit["Rechazar commit"]
+    future -- "no" --> store["Guardar offset del grupo"]

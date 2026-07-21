@@ -152,7 +152,7 @@
       "id": "kafka",
       "title": "Kafka",
       "slug": "kafka",
-      "status": "implemented",
+      "status": "benchmarked",
       "milestone": "S4 · 08 · Kafka",
       "module": "src/kafka.rs",
       "example": "examples/kafka.rs",
