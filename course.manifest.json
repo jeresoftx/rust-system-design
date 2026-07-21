@@ -101,7 +101,7 @@
       "id": "dropbox",
       "title": "Dropbox",
       "slug": "dropbox",
-      "status": "implemented",
+      "status": "benchmarked",
       "milestone": "S4 · 05 · Dropbox",
       "module": "src/dropbox.rs",
       "example": "examples/dropbox.rs",

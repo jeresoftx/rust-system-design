@@ -1,0 +1,18 @@
+flowchart TD
+    upload["Subida de archivo"] --> device{"¿Dispositivo existe?"}
+    device -- "no" --> reject_device["Rechazar sin tocar chunks"]
+    device -- "sí" --> path{"¿Path válido?"}
+    path -- "no" --> reject_path["Rechazar path vacío"]
+    path -- "sí" --> base{"¿Base coincide con revisión actual?"}
+    base -- "sí o archivo nuevo" --> chunk["Dividir en chunks"]
+    base -- "no" --> conflict["Crear copia en conflicto"]
+    conflict --> chunk
+    chunk --> store{"¿Chunk ya existe?"}
+    store -- "sí" --> reuse["Reutilizar chunk"]
+    store -- "no" --> persist["Guardar chunk nuevo"]
+    reuse --> metadata["Publicar metadatos"]
+    persist --> metadata
+    metadata --> sync["Cambio visible para sync"]
+    download["Descarga"] --> missing{"¿Falta algún chunk?"}
+    missing -- "sí" --> fail_download["Fallar explícitamente"]
+    missing -- "no" --> assemble["Reconstruir bytes"]

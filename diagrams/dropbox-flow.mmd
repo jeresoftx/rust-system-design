@@ -1,0 +1,11 @@
+flowchart LR
+    device["Dispositivo"] --> api["Sync API"]
+    api --> chunker["Chunker"]
+    chunker --> chunks["Chunk store"]
+    api --> detector["Conflict detector"]
+    detector --> metadata["Metadata store"]
+    metadata --> revisions["Revision log"]
+    revisions --> sync["Sync changes"]
+    chunks --> download["Download assembler"]
+    metadata --> download
+    api --> metrics["Métricas"]
