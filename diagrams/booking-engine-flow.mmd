@@ -1,0 +1,16 @@
+flowchart LR
+    client["Cliente"] --> availability["Availability API"]
+    availability --> calendar["Inventory calendar"]
+    availability --> pricing["Pricing engine"]
+    client --> hold["Hold manager"]
+    hold --> guard["Consistency guard"]
+    guard --> calendar
+    hold --> pricing
+    hold --> ttl["TTL manager"]
+    client --> reservation["Reservation manager"]
+    reservation --> guard
+    reservation --> calendar
+    ttl --> calendar
+    calendar --> metrics["Métricas"]
+    hold --> metrics
+    reservation --> metrics

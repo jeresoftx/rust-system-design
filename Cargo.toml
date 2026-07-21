@@ -43,4 +43,8 @@ harness = false
 name = "kafka_publish_fetch_baseline"
 harness = false
 
+[[bench]]
+name = "booking_engine_hold_baseline"
+harness = false
+
 [dependencies]
