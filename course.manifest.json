@@ -118,7 +118,7 @@
       "id": "google-docs",
       "title": "Google Docs",
       "slug": "google-docs",
-      "status": "draft",
+      "status": "implemented",
       "milestone": "S4 · 06 · Google Docs",
       "module": "src/google_docs.rs",
       "example": "examples/google_docs.rs",
