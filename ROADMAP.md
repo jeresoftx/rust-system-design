@@ -12,7 +12,7 @@ El repositorio ya tiene estructura inicial, licencias, README, AGENTS, crate
 Rust verificable, tabla de capítulos-proyecto, milestones, issues, labels y
 asignaciones en GitHub.
 
-TinyURL, Twitter, Uber, Netflix, Dropbox y Google Docs están en estado
+TinyURL, Twitter, Uber, Netflix, Dropbox, Google Docs y Redis están en estado
 `benchmarked`: tienen diseño, modelo Rust, ejemplo, pruebas, doctests, diagramas
 y baseline de benchmark. No están marcados como `reviewed` ni `published`
 porque falta revisión humana de contenido, claridad, ortografía, honestidad
@@ -28,7 +28,7 @@ autoral y preparación editorial.
 | 04 | Netflix | benchmarked |
 | 05 | Dropbox | benchmarked |
 | 06 | Google Docs | benchmarked |
-| 07 | Redis | planned |
+| 07 | Redis | benchmarked |
 | 08 | Kafka | planned |
 | 09 | Booking Engine | planned |
 | 10 | Airbnb | planned |
@@ -58,6 +58,6 @@ autoral y preparación editorial.
 
 ## Siguiente paso natural
 
-Revisión humana de TinyURL, Twitter, Uber, Netflix, Dropbox y Google Docs antes
-de marcar capítulos como `reviewed` o `published`. Después de esa revisión,
-continuar con el bloque del capítulo Redis.
+Revisión humana de TinyURL, Twitter, Uber, Netflix, Dropbox, Google Docs y Redis
+antes de marcar capítulos como `reviewed` o `published`. Después de esa
+revisión, continuar con el bloque del capítulo Kafka.
