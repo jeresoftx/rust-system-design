@@ -31,4 +31,8 @@ harness = false
 name = "dropbox_upload_baseline"
 harness = false
 
+[[bench]]
+name = "google_docs_operations_baseline"
+harness = false
+
 [dependencies]

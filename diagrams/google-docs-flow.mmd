@@ -1,0 +1,9 @@
+flowchart LR
+    client["Cliente"] --> api["Document API"]
+    api --> transformer["Operation transformer"]
+    transformer --> state["Document state"]
+    state --> log["Operation log"]
+    client --> presence["Presence service"]
+    log --> sync["Sync service"]
+    state --> metrics["Métricas"]
+    presence --> metrics
