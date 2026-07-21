@@ -17,3 +17,5 @@
 - [Revisión pendiente: Dropbox](./revision-dropbox.md)
 - [Google Docs](./06-google-docs.md)
 - [Revisión pendiente: Google Docs](./revision-google-docs.md)
+- [Redis](./07-redis.md)
+- [Revisión pendiente: Redis](./revision-redis.md)
