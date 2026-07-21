@@ -101,7 +101,7 @@
       "id": "dropbox",
       "title": "Dropbox",
       "slug": "dropbox",
-      "status": "planned",
+      "status": "draft",
       "milestone": "S4 · 05 · Dropbox",
       "module": "src/dropbox.rs",
       "example": "examples/dropbox.rs",
