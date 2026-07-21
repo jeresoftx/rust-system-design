@@ -2,7 +2,7 @@
 
 - **Curso:** rust-system-design
 - **Semestre:** 4
-- **Estado:** draft
+- **Estado:** benchmarked
 - **Issue:** #25
 - **Milestone:** S4 · 06 · Google Docs
 - **Módulo Rust:** `src/google_docs.rs`

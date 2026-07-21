@@ -1,0 +1,18 @@
+flowchart TD
+    op["Operación del cliente"] --> doc{"¿Documento existe?"}
+    doc -- "no" --> reject_doc["Rechazar"]
+    doc -- "sí" --> collaborator{"¿Colaborador existe?"}
+    collaborator -- "no" --> reject_collab["Rechazar"]
+    collaborator -- "sí" --> version{"¿Base futura?"}
+    version -- "sí" --> reject_version["Rechazar: servidor decide"]
+    version -- "no" --> stale{"¿Base atrasada?"}
+    stale -- "sí" --> transform["Transformar posición"]
+    stale -- "no" --> validate["Validar posición y rango"]
+    transform --> validate
+    validate -- "inválida" --> reject_position["Rechazar sin avanzar versión"]
+    validate -- "válida" --> apply["Aplicar al texto"]
+    apply --> log["Persistir en operation log"]
+    log --> sync["Disponible para sync"]
+    presence["Presencia"] --> ttl{"¿Latido vigente?"}
+    ttl -- "no" --> expire["Ocultar presencia sin tocar contenido"]
+    ttl -- "sí" --> visible["Mostrar cursor"]
