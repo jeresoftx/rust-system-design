@@ -2,7 +2,7 @@
 
 - **Curso:** rust-system-design
 - **Semestre:** 4
-- **Estado:** draft
+- **Estado:** implemented
 - **Issue:** #37
 - **Milestone:** S4 · 09 · Booking Engine
 - **Módulo Rust:** `src/booking_engine.rs`
