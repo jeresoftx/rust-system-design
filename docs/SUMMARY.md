@@ -15,3 +15,5 @@
 - [Revisión pendiente: Netflix](./revision-netflix.md)
 - [Dropbox](./05-dropbox.md)
 - [Revisión pendiente: Dropbox](./revision-dropbox.md)
+- [Google Docs](./06-google-docs.md)
+- [Revisión pendiente: Google Docs](./revision-google-docs.md)

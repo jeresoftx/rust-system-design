@@ -104,6 +104,8 @@ cargo test --doc
   capítulo-proyecto Netflix.
 - `docs/revision-dropbox.md` concentra el estado de revisión pendiente del
   capítulo-proyecto Dropbox.
+- `docs/revision-google-docs.md` concentra el estado de revisión pendiente del
+  capítulo-proyecto Google Docs.
 - `diagrams/course-map.mmd` muestra prerequisitos, capítulos-proyecto y salidas
   hacia cursos posteriores o dominios aplicados.
 - `docs/flujo-autonomo.md` define el modo autónomo con revisión diferida
