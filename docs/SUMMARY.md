@@ -19,3 +19,4 @@
 - [Revisión pendiente: Google Docs](./revision-google-docs.md)
 - [Redis](./07-redis.md)
 - [Revisión pendiente: Redis](./revision-redis.md)
+- [Kafka](./08-kafka.md)
