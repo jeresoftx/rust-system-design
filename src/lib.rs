@@ -6,6 +6,7 @@
 
 pub mod dropbox;
 pub mod google_docs;
+pub mod kafka;
 pub mod netflix;
 pub mod redis;
 pub mod tiny_url;
