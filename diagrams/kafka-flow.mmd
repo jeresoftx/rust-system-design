@@ -1,0 +1,18 @@
+flowchart LR
+    producer["Producer"] --> api["Producer API"]
+    api --> partitioner["Partitioner"]
+    partitioner --> p0["Partición 0"]
+    partitioner --> p1["Partición 1"]
+    partitioner --> p2["Partición N"]
+    p0 --> retention["Retention manager"]
+    p1 --> retention
+    p2 --> retention
+    consumer["Consumer group"] --> fetch["Fetch desde offset"]
+    fetch --> p0
+    fetch --> offsets["Offset store"]
+    offsets --> lag["Lag calculator"]
+    p0 --> lag
+    p1 --> lag
+    p2 --> lag
+    lag --> metrics["Métricas"]
+    retention --> metrics

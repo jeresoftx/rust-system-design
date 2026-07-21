@@ -39,4 +39,8 @@ harness = false
 name = "redis_hot_path_baseline"
 harness = false
 
+[[bench]]
+name = "kafka_publish_fetch_baseline"
+harness = false
+
 [dependencies]
