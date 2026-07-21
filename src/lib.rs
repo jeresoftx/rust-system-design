@@ -4,6 +4,7 @@
 //! exponer metadatos verificables del curso mientras los proyectos se
 //! planifican como milestones e issues antes de tocar código de curso.
 
+pub mod airbnb;
 pub mod booking_engine;
 pub mod dropbox;
 pub mod google_docs;
