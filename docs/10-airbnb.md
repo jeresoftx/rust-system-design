@@ -2,7 +2,7 @@
 
 - **Curso:** rust-system-design
 - **Semestre:** 4
-- **Estado:** implemented
+- **Estado:** benchmarked
 - **Issue:** #41
 - **Milestone:** S4 · 10 · Airbnb
 - **Módulo Rust:** `src/airbnb.rs`

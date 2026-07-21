@@ -1,0 +1,19 @@
+flowchart TD
+    search["SEARCH"] --> city{"¿Ciudad coincide?"}
+    city -- "no" --> skip_city["Excluir listing"]
+    city -- "sí" --> status{"¿Usuario y listing activos?"}
+    status -- "no" --> skip_status["Excluir por suspensión"]
+    status -- "sí" --> capacity{"¿Capacidad suficiente?"}
+    capacity -- "no" --> skip_capacity["Excluir por capacidad"]
+    capacity -- "sí" --> calendar{"¿Calendario disponible?"}
+    calendar -- "no" --> skip_calendar["Excluir por disponibilidad"]
+    calendar -- "sí" --> price{"¿Precio dentro del filtro?"}
+    price -- "no" --> skip_price["Excluir por precio"]
+    price -- "sí" --> result["Mostrar resultado con trust score"]
+    book["BOOK"] --> revalidate["Revalidar estado y calendario"]
+    revalidate --> reserve{"¿Todavía disponible?"}
+    reserve -- "no" --> reject_booking["Rechazar reserva"]
+    reserve -- "sí" --> confirmed["Confirmar y bloquear noches"]
+    review["REVIEW"] --> duplicate{"¿Ya tiene reseña?"}
+    duplicate -- "sí" --> reject_review["Rechazar duplicado"]
+    duplicate -- "no" --> trust["Actualizar confianza"]

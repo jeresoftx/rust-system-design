@@ -1,0 +1,17 @@
+flowchart LR
+    host["Anfitrión"] --> listings["Listing service"]
+    host --> calendar["Calendar service"]
+    guest["Huésped"] --> search["Search service"]
+    search --> listings
+    search --> calendar
+    search --> trust["Trust service"]
+    guest --> booking["Booking service"]
+    booking --> users["User service"]
+    booking --> listings
+    booking --> calendar
+    guest --> reviews["Review service"]
+    reviews --> trust
+    users --> trust
+    search --> metrics["Métricas"]
+    booking --> metrics
+    reviews --> metrics

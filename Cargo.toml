@@ -47,4 +47,8 @@ harness = false
 name = "booking_engine_hold_baseline"
 harness = false
 
+[[bench]]
+name = "airbnb_search_booking_baseline"
+harness = false
+
 [dependencies]
